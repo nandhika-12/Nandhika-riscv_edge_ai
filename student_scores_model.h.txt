@@ -1,0 +1,39 @@
+// student_scores_model.h
+// ESP32 Header File for Student Score AI Model
+
+#ifndef STUDENT_SCORES_MODEL_H
+#define STUDENT_SCORES_MODEL_H
+
+#define NUM_FEATURES 5
+
+// Mean values for normalization
+double mean[NUM_FEATURES] = {
+  75.0,
+  80.0,
+  78.0,
+  82.0,
+  85.0
+};
+
+// Scale values for normalization
+double scale[NUM_FEATURES] = {
+  10.0,
+  12.0,
+  11.0,
+  9.0,
+  8.0
+};
+
+// Linear Regression Weights
+double weights[NUM_FEATURES] = {
+  0.25,
+  0.30,
+  0.15,
+  0.20,
+  0.10
+};
+
+// Bias term
+double bias = 5.5;
+
+#endif
